@@ -11,7 +11,7 @@
 
 <body>
     <header class="container mx-auto mb-10">
-        <nav class="flex justify-around items-center px-4 md:px-10 py-4 bg-sky-100">
+        <nav class="flex justify-around items-center px-4 md:px-10 py-4 bg-sky-200">
             <div class="flex-1">
                 <h1 class="text-3xl md:text-5xl font-bold text-gray-700">Interactive</h1>
                 <h4 class="text-base md:text-3xl font-semibold text-gray-500">Area <span
@@ -29,7 +29,7 @@
                     <figure class="h-48 flex items-center justify-center my-4"><img src="images/triangle.png"
                             alt="Triangle" /></figure>
                     <div class="">
-                        <h2 class="font-bold text-xl md:text-2xl">Triangle</h2>
+                        <h2 id="triangle-title" class="font-bold text-xl md:text-2xl">Triangle</h2>
                         <p class="font-medium text-base md:text-xl my-2">Area(A) = <span id="triangle-area">0.5 X b X
                                 h</span> cm <sup>2</sup></p>
                         <div class="my-2">
@@ -51,7 +51,7 @@
                     <figure class="h-48 flex items-center justify-center my-4"><img src="images/rectangle.png"
                             alt="Rectangle" /></figure>
                     <div class="">
-                        <h2 class="font-bold text-xl md:text-2xl">Rectangle</h2>
+                        <h2 id="rectangle-title" class="font-bold text-xl md:text-2xl">Rectangle</h2>
                         <p class="font-medium text-base md:text-xl my-2">Area(A) = <span id="rectangle-area">w X
                                 l</span> cm<sup>2</sup> </p>
                         <div class="my-2">
@@ -73,7 +73,7 @@
                     <figure class="h-48 flex items-center justify-center my-4"><img src="images/parallelogram.png"
                             alt="Parallelogram" /></figure>
                     <div class="">
-                        <h2 class="font-bold text-xl md:text-2xl">Parallelogram</h2>
+                        <h2 id="parallelogram-title" class="font-bold text-xl md:text-2xl">Parallelogram</h2>
                         <p class="font-medium text-base md:text-xl my-2">Area(A) = <span id="parallelogram-area">b X
                                 h</span> cm<sup>2</sup> </p>
                         <div class="my-2">
@@ -95,7 +95,7 @@
                     <figure class="h-48 flex items-center justify-center my-4"><img src="images/rhombus.png"
                             alt="Rhombus" /></figure>
                     <div class="">
-                        <h2 class="font-bold text-xl md:text-2xl">Rhombus</h2>
+                        <h2 id="rhombus-title" class="font-bold text-xl md:text-2xl">Rhombus</h2>
                         <p class="font-medium text-base md:text-xl my-2">Area(A)= <span id="rhombus-area">0.5 X D1 X
                                 D2</span> cm<sup>2</sup> </p>
                         <div class="my-2">
@@ -117,7 +117,7 @@
                     <figure class="h-48 flex items-center justify-center my-4"><img src="images/pentagon.png"
                             alt="Pentagon" /></figure>
                     <div class="">
-                        <h2 class="font-bold text-xl md:text-2xl">Pentagon</h2>
+                        <h2 id="pentagon-title" class="font-bold text-xl md:text-2xl">Pentagon</h2>
                         <p class="font-medium text-base md:text-xl my-2">Area(A)=<span id="pentagon-area">0.5 X p X
                                 a</span> cm<sup>2</sup></p>
                         <div class="my-2">
@@ -139,7 +139,7 @@
                     <figure class="h-48 flex items-center justify-center my-4"><img src="images/ellipse.png"
                             alt="Ellipse" /></figure>
                     <div class="">
-                        <h2 class="font-bold text-xl md:text-2xl">Ellipse</h2>
+                        <h2 id="ellipse-title" class="font-bold text-xl md:text-2xl">Ellipse</h2>
                         <p class="font-medium text-base md:text-xl my-2">Area(A) = <span id="ellipse-area"> π X a X
                                 b</span> cm<sup>2</sup></p>
                         <div class="my-2">
@@ -158,8 +158,8 @@
                 </div>
             </div>
             <div class="px-4  shadow-xl  my-10 md:mt-0 ">
-                <h1 class="text-center text-2xl font-bold text-sky-700">Area Calculation</h1>
-                <div class="item-added-field min-h-60 border-2 rounded">
+                <h1 class="text-center text-2xl font-bold text-sky-700">List of Area Calculations</h1>
+                <div id="reference-field" class="item-added-field min-h-60 border-2 rounded">
 
                 </div>
             </div>
