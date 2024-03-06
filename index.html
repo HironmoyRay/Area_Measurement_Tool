@@ -10,17 +10,139 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto my-10">
         <nav class="flex justify-around items-center px-4 md:px-10 py-4 bg-sky-100">
             <div class="flex-1">
                 <h1 class="text-3xl md:text-5xl font-bold text-gray-700">Interactive</h1>
-                <h4 class="text-base md:text-3xl font-semibold text-gray-500"  >Area <span class="text-sky-700 font-bold">Measurement</span> Tool</h4>
+                <h4 class="text-base md:text-3xl font-semibold text-gray-500">Area <span
+                        class="text-sky-700 font-bold">Measurement</span> Tool</h4>
             </div>
             <button
                 class="bg-sky-400 hover:bg-sky-600 px-6 py-2 rounded-xl text-white text-base md:text-lg font-medium">Blog</button>
         </nav>
-        
     </header>
+    <main class="container mx-auto">
+        <section class="flex flex-col md:flex-row">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-3  gap-2">
+                <!-- Triangle -->
+                <div class=" bg-base-100 shadow-xl text-center mt-8 mx-2 px-4 py-4 ">
+                    <figure class="h-48 flex items-center justify-center my-4"><img src="images/triangle.png"
+                            alt="Triangle" /></figure>
+                    <div class="">
+                        <h2 class="font-bold text-xl md:text-2xl">Triangle</h2>
+                        <p class="font-medium text-base md:text-xl my-2">Area(A) = 0.5 X b X h</p>
+                        <div class="my-2">
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="triangle-base" placeholder="Base"> 
+                            <p class="inline-block font-medium pe-2">cm</p>
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="" placeholder="Height">
+                            <p class="inline-block font-medium pe-2">cm</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-sky-500 text-white text-base md:text-xl mt-2 md:mt-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle -->
+                <div class=" bg-base-100 shadow-xl text-center mt-8 mx-2 px-4 py-4 ">
+                    <figure class="h-48 flex items-center justify-center my-4"><img src="images/rectangle.png"
+                            alt="Rectangle" /></figure>
+                    <div class="">
+                        <h2 class="font-bold text-xl md:text-2xl">Rectangle</h2>
+                        <p class="font-medium text-base md:text-xl my-2">Area(A) = w X l</p>
+                        <div class="my-2">
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="rectangle-width" placeholder="Width"> 
+                            <p class="inline-block font-medium pe-2">cm</p>
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="rectangle-length" placeholder="Length">
+                            <p class="inline-block font-medium pe-2">cm</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-sky-500 text-white text-base md:text-xl mt-2 md:mt-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram -->
+                <div class=" bg-base-100 shadow-xl text-center mt-8 mx-2 px-4 py-4 ">
+                    <figure class="h-48 flex items-center justify-center my-4"><img src="images/parallelogram.png"
+                            alt="Parallelogram" /></figure>
+                    <div class="">
+                        <h2 class="font-bold text-xl md:text-2xl">Parallelogram</h2>
+                        <p class="font-medium text-base md:text-xl my-2">Area(A) = b X h</p>
+                        <div class="my-2">
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="parallelogram-base" placeholder="Base"> 
+                            <p class="inline-block font-medium pe-2">cm</p>
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="parallelogram-height" placeholder="Height">
+                            <p class="inline-block font-medium pe-2">cm</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-sky-500 text-white text-base md:text-xl mt-2 md:mt-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rhombus -->
+                <div class=" bg-base-100 shadow-xl text-center mt-8 mx-2 px-4 py-4 ">
+                    <figure class="h-48 flex items-center justify-center my-4"><img src="images/rhombus.png"
+                            alt="Rhombus" /></figure>
+                    <div class="">
+                        <h2 class="font-bold text-xl md:text-2xl">Rhombus</h2>
+                        <p class="font-medium text-base md:text-xl my-2">Area(A)=0.5 X D1 X D2</p>
+                        <div class="my-2">
+                            <input class="border-2 rounded-sm w-20 px-2" type="number" name="" id="max-diagonal" placeholder="D1"> 
+                            <p class="inline-block font-medium pe-2">cm</p>
+                            <input class="border-2 rounded-sm w-20 px-2" type="number" name="" id="min-diagonal" placeholder="D2">
+                            <p class="inline-block font-medium pe-2">cm</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-sky-500 text-white text-base md:text-xl mt-2 md:mt-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon -->
+                <div class=" bg-base-100 shadow-xl text-center mt-8 mx-2 px-4 py-4 ">
+                    <figure class="h-48 flex items-center justify-center my-4"><img src="images/triangle.png"
+                            alt="Pentagon" /></figure>
+                    <div class="">
+                        <h2 class="font-bold text-xl md:text-2xl">Pentagon</h2>
+                        <p class="font-medium text-base md:text-xl my-2">Area(A)=0.5 X p X a</p>
+                        <div class="my-2">
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="pentagon-perimeter" placeholder="Perimeter"> 
+                            <p class="inline-block font-medium pe-2">cm</p>
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="pentagon-apothem" placeholder="Apothem">
+                            <p class="inline-block font-medium pe-2">cm</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-sky-500 text-white text-base md:text-xl mt-2 md:mt-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ellipse -->
+                <div class=" bg-base-100 shadow-xl text-center mt-8 mx-2 px-4 py-4 ">
+                    <figure class="h-48 flex items-center justify-center my-4"><img src="images/ellipse.png"
+                            alt="Ellipse" /></figure>
+                    <div class="">
+                        <h2 class="font-bold text-xl md:text-2xl">Ellipse</h2>
+                        <p class="font-medium text-base md:text-xl my-2">Area(A) = π X a X b</p>
+                        <div class="my-2">
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="max-radius" placeholder="Radius1"> 
+                            <p class="inline-block font-medium pe-2">cm</p>
+                            <input class="border-2 rounded-sm w-20 px-1" type="number" name="" id="min-radius" placeholder="Radius2">
+                            <p class="inline-block font-medium pe-2">cm</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-sky-500 text-white text-base md:text-xl mt-2 md:mt-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 border-2 shadow-xl rounded">
+                <h1 class="text-center text-2xl font-bold text-sky-700">Area Calculation</h1>
+                <hr>
+                <hr>
+                <div class="item-added-field">
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
